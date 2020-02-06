@@ -1,0 +1,24 @@
+{
+	"name": "PDFDownloadCard",
+	"author": "Bertrand Gorge - Neayi",
+	"version": "1.0.0",
+	"url": "https://www.mediawiki.org/wiki/Extension:PDFDownloadCard",
+	"descriptionmsg": "pdfcardextension-desc",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"PDFDownloadCard": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"PDFDownloadCardHooks": "src/PDFDownloadCardHooks.php"
+	},
+	"ExtensionMessagesFiles": {
+		"PDFDownloadCardMagic": "PDFDownloadCard.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "PDFDownloadCardHooks::onParserFirstCallInit"
+	},
+	"manifest_version": 1
+}
